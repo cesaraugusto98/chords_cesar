@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Chords_Cesar</string>
+    <string-array name="listBands">
+        <item>Beatles</item>
+        <item>Oasis</item>
+    </string-array>
+    <string-array name="listMusics">
+        <item>Champagne Supernova</item>
+        <item>Hey Bulldog</item>
+    </string-array>
+
+    <string name="pesquisar">Pesquisar</string>
+    <string name="saudacoes">Bem vindo ao Chords Cesar</string>
 </resources>
