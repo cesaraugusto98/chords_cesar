@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private MusicList store = new MusicList();
+    private PessoaList psList = new PessoaList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,22 +18,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickSearch(View view){
-        Spinner spnBanda = findViewById(R.id.spnBanda);
-        Spinner spnMusica = findViewById(R.id.spnMusica);
+        TextView txtLogin = findViewById(R.id.txtLogin);
+        TextView txtSenha = findViewById(R.id.txtSenha);
         TextView lblResultado = findViewById(R.id.lblResultado);
 
-        String banda = String.valueOf(spnBanda.getSelectedItem());
-        String musica = String.valueOf(spnMusica.getSelectedItem());
+        String login = String.valueOf(txtLogin.getText());
+        String senha = String.valueOf(txtSenha.getText());
 
-        Music resultado = store.searchMusic(new Specification(banda, musica));
+        Pessoa resultado = psList.searchLogin(login, senha);
 
-        StringBuilder resultadoFinal = new StringBuilder();
-
-        if(resultado != null){
-            resultadoFinal.append(resultado.getChords());
-            lblResultado.setText(resultadoFinal);
+        if(resultado!= null){
+            lblResultado.setText("Bem vindo, " + resultado.getNome());
         }else{
-            lblResultado.setText("Dados não encontrados");
+            lblResultado.setText("Falha\r\nVerifique a ortografia");
         }
     }
 

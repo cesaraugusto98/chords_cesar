@@ -20,17 +20,21 @@
             android:text="TextView"
             tools:text="@string/saudacoes" />
 
-        <Spinner
-            android:id="@+id/spnBanda"
+        <EditText
+            android:id="@+id/txtLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="50dp" />
+            android:contentDescription="@string/login"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
 
-        <Spinner
-            android:id="@+id/spnMusica"
+        <EditText
+            android:id="@+id/txtSenha"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/senha"
+            android:ems="10"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btnPesquisar"
