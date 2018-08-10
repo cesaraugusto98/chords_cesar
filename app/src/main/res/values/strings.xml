@@ -9,8 +9,8 @@
         <item>Hey Bulldog</item>
     </string-array>
 
-    <string name="pesquisar">Pesquisar</string>
-    <string name="saudacoes">Bem vindo ao Chords Cesar</string>
+    <string name="logar">Logar</string>
+    <string name="saudacoes">Bem vindo ao Login Cesar</string>
     <string name="login">Login</string>
     <string name="senha">Senha</string>
 </resources>

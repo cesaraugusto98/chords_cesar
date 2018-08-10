@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickSearch"
-            android:text="@string/pesquisar" />
+            android:text="@string/logar" />
 
         <TextView
             android:id="@+id/lblResultado"
