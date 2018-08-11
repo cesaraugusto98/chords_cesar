@@ -10,7 +10,7 @@
     </string-array>
 
     <string name="logar">Logar</string>
-    <string name="saudacoes">Bem vindo ao Login Cesar</string>
+    <string name="saudacoes">Bem vindo, faça login no nosso sistema!    </string>
     <string name="login">Login</string>
     <string name="senha">Senha</string>
 </resources>

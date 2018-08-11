@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MusicList store = new MusicList();
     private PessoaList psList = new PessoaList();
 
     @Override
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         if(resultado!= null){
             lblResultado.setText("Bem vindo, " + resultado.getNome());
         }else{
-            lblResultado.setText("Falha\r\nVerifique a ortografia");
+            lblResultado.setText("Falha!\r\nVerifique a ortografia");
         }
     }
 
